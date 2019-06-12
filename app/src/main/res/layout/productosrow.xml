@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:onClick="pinchaProducto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" android:id="@+id/cvProducto"
+                                    app:cardCornerRadius="10dp"
+                                    android:layout_marginBottom="5dp">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp" app:srcCompat="@mipmap/ic_launcher_round"
+                android:id="@+id/ivImagenProducto"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/ivImagenProducto" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvPrecioProducto"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:id="@+id/linearLayout3"
+                android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content" android:id="@+id/tvNombreProducto"
+                    android:textColor="@color/colorAccent" android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content" android:id="@+id/tvCategoriaProducto"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content" android:id="@+id/tvFechaProducto"
+            />
+        </LinearLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:textSize="24sp"
+                android:layout_height="wrap_content" android:id="@+id/tvPrecioProducto"
+                android:layout_weight="1" android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+                android:textStyle="bold" android:textColor="@color/colorDark"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

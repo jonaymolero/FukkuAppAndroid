@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Fukku!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+    <string name="signed_out">Signed Out</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+
+    <string name="hint_name">Nombre</string>
+    <string name="hint_surnames">Apellidos</string>
+    <string name="hint_gender">Sexo</string>
+    <string name="hint_birthday">Cumpleaños</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+
+    <string name="productosNav">Tus productos</string>
+    <string name="productosFavNav">Tus productos favoritos</string>
+    <string name="categoriasFavNav">Tus categorias de interes</string>
+    <string name="chatsNav">Tus chats</string>
+    <string name="cerrarsesion">Cerrar sesión</string>
+    <string name="exit">Salir</string>
+    <string name="nav_nickUser">Nick del usuario</string>
+    <string name="categorias">Categorias</string>
+    <string name="title_activity_productos">ProductosActivity</string>
+    <string name="title_activity_categoria">CategoriaActivity</string>
+    <string name="add_producto_nombre">Nombre</string>
+    <string name="add_producto_descripcion">Descripción</string>
+    <string name="add_producto_precio">Precio</string>
+    <string name="add_producto_categoria">Categoría:</string>
+    <string name="add_producto_add">Subir Producto</string>
+    <string name="title_activity_productos_de_un_categoria">Productos_de_un_categoria</string>
+    <string name="addFavortios">Añadir a favoritos</string>
+    <string name="deleteFavortios">Eliminar de favoritos</string>
+    <string name="title_activity_detail_product">DetailProductActivity</string>
+    <string name="usuario">Usuario:</string>
+    <string name="actualizarProducto">Actualizar producto</string>
+    <string name="deleteProducto">Borrar Producto</string>
+    <string name="titleDetail">Descripción del producto</string>
+</resources>

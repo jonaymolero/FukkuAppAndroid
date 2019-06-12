@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_profile"
+        tools:context=".views.ProfileActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="20dp">
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp">
+
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/tvProfileName"
+                        app:layout_constraintEnd_toStartOf="@+id/ivProfile"
+                        android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="24sp" android:textStyle="bold" app:layout_constraintVertical_bias="0.25"
+                        android:textColor="@color/colorDark"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:id="@+id/ivProfile"
+                        android:src="@drawable/ic_fukku_logo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                    android:text="Información básica:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView9" android:textStyle="bold"
+                    android:textColor="@color/colorDark"/>
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" android:textColorHint="@color/colorPrimaryDark">
+
+                <EditText
+                        android:id="@+id/itProfileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_name"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_profile_surnames"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" android:textColorHint="@color/colorPrimaryDark">
+
+                <EditText
+                        android:id="@+id/itProfileSurnames"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_surnames"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                    android:text="Información personal:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView10"
+                    android:textColor="@color/colorDark" android:textStyle="bold"
+                    android:layout_marginTop="20dp"/>
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_profile_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:textColorHint="@color/colorPrimaryDark">
+
+                <EditText
+                        android:id="@+id/itProfileGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_gender"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_profile_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" android:textColorHint="@color/colorPrimaryDark">
+
+                <EditText
+                        android:id="@+id/itProfileBirthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_birthday"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" android:textColorHint="@color/colorPrimaryDark">
+
+                <EditText
+                        android:id="@+id/itProfileEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_email"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                    android:text="Cambia tu contraseña"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/btnProfileChangePass"
+                    android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

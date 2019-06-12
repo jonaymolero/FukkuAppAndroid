@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_productos"
+                android:title="@string/productosNav"/>
+        <item
+                android:id="@+id/nav_productosFav"
+                android:title="@string/productosFavNav"/>
+        <item
+                android:id="@+id/nav_categoriasFav"
+                android:title="@string/categoriasFavNav"/>
+        <item
+                android:id="@+id/nav_chat"
+                android:title="@string/chatsNav"/>
+
+        <item
+                android:id="@+id/nav_cerrarSesion"
+                android:title="@string/cerrarsesion"/>
+
+        <item
+                android:id="@+id/nav_exit"
+                android:title="@string/exit"/>
+    </group>
+
+</menu>
